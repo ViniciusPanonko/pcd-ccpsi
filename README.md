@@ -2,7 +2,7 @@
 
 Tenha instalado o VSCode, PostgreSQL, node e Insomnia.
 
-Baixe os arquivos do repositório e faça a extração em uma pasta ***diferente da pasta anterior do projeto***.  
+Baixe os arquivos do repositório e faça a extração em uma pasta.  
 **Abra o arquivo .env da pasta backend e modifique com o usuário e senha do seu PostgreSQL.**  
 Abra um prompt de comando **dentro da pasta backend**. Se estiver abrindo o terminal pelo VSCode, não esqueça de abrir novas abas como "command prompt".  
 Execute os comandos, nessa ordem:  
