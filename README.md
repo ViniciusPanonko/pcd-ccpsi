@@ -20,3 +20,11 @@ Agora abra um novo prompt **dentro da pasta frontend**. Execute os comandos:
 
 O frontend deve estar funcionando na porta 5173.  
 Acesse pelo navegador através da URL http://localhost:5173/
+
+## Credenciais de Teste (Administrador / Empresa)
+
+Para acessar como empresa e gerenciar vagas, utilize:
+- **Usuário:** `rh@techsolutions.com`
+- **Senha:** `123`
+
+Outras empresas criadas pelo seed também possuem a senha `123`.
