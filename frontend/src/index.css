@@ -1,0 +1,80 @@
+/* Import Premium Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Dyslexic&display=swap');
+/* Fallback/Simulation */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand Colors - Modern Blue/Purple Gradient feel */
+  --primary: 79 70 229;
+  /* Indigo 600 */
+  --primary-foreground: 255 255 255;
+
+  --background: 248 250 252;
+  /* Slate 50 */
+  --foreground: 15 23 42;
+  /* Slate 900 */
+
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+
+  --muted: 241 245 249;
+  /* Slate 100 */
+  --muted-foreground: 100 116 139;
+  /* Slate 500 */
+
+  --border: 226 232 240;
+  /* Slate 200 */
+
+  --radius: 0.75rem;
+}
+
+/* High Contrast Mode Variables */
+.high-contrast {
+  --primary: 255 255 0;
+  /* Yellow */
+  --primary-foreground: 0 0 0;
+  /* Black */
+
+  --background: 0 0 0;
+  --foreground: 255 255 255;
+
+  --card: 0 0 0;
+  --card-foreground: 255 255 255;
+
+  --muted: 26 26 26;
+  --muted-foreground: 255 255 255;
+
+  --border: 255 255 255;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dyslexic Font Override */
+.dyslexic-font body,
+.dyslexic-font * {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', sans-serif !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Utilities */
+.container-page {
+  @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+.btn-primary {
+  @apply bg-[rgb(var(--primary))] text-[rgb(var(--primary-foreground))] px-4 py-2 rounded-[var(--radius)] font-medium hover:opacity-90 transition-all shadow-lg shadow-indigo-500/20;
+}
+
+.card {
+  @apply bg-[rgb(var(--card))] text-[rgb(var(--card-foreground))] rounded-[var(--radius)] border border-[rgb(var(--border))] shadow-sm hover:shadow-md transition-shadow p-6;
+}
