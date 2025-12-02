@@ -28,3 +28,7 @@ Para acessar como empresa e gerenciar vagas, utilize:
 - **Senha:** `123`
 
 Outras empresas criadas pelo seed também possuem a senha `123`.
+
+Email: admin@inclui.com
+Senha: admin123
+
